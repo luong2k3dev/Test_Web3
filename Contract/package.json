@@ -1,0 +1,22 @@
+{
+  "name": "contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+		"compile": "hardhat compile",
+		"contract:deploy": "npm run compile && npx hardhat run --network mumbai ./scripts/deploy.js",
+		"hardhat:node": "hardhat node"
+	},
+
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.17.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3"
+  }
+}
